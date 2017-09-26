@@ -1,66 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
-}
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+        .my-card {
+            box-shadow: 0 15px 100px 0 #9C27B0;
+            max-width: 300px;
+            /* margin: auto; */
+            background-color: white;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+        
+        .btn {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        .btn a {
+            text-decoration: none;
+            font-size: 22px;
+            color: white;
+        }
+        
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+        
+        body,
+        html {
+            /* height: 100%; */
+            background-repeat: no-repeat;
+            background-image: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));
+        }
+    .auto-style1 {
+		margin-top: 45px;
+	}
+    .auto-style2 {
+		margin-top: 28px;
+	}
+    .auto-style3 {
+		margin-top: 27px;
+	}
+    </style>
 </head>
+
 <body>
-
-<h2 style="text-align:center">My Profile</h2>
-
-<div class="card">
-  <img src="yd.jpg" alt="Anandu Y D" style="width:100%">
-  <h1>Anandu Y D</h1>
-  <p class="title">Software Engineer & Developer</p>
-  <p>Angular 2  & 4</p>
-  <p>Data Visualization</p>
-  <p>Spring Framework</p>
-  <p>Android with Kotlin</p>
-  <p>B.Tech Graduate</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
- </div>
- <p><button>Contact Me :</button></p>
-</div>
-
+    <!--<h2 style="text-align:center">My Profile</h2>-->
+    <div class="container">
+    <div class="row">
+        <div class="col-4" style="left: 0px; top: 6px; width: 25%; height: 746px">
+            <div class="my-card">
+                <img src="yd.jpg" alt="Anandu Y D" style="width:100%">
+                <h1>Anandu Y D</h1>
+              <p class="title">Software Engineer</p>
+              <h6>Developer/Programmer</h6>
+              <h6>Coder/Tester/Designer/Gamer/Player</h6>
+                <p>B.Tech Graduate</p>
+                <div style="margin: 5px 0;">
+                    <a href="https://twitter.com/ananduyd"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/anandu-yd-0aa024bb"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/ydunni"><i class="fa fa-facebook"></i></a>
+                </div>
+                <span class="btn"><a href="mailto:anandud94@gmail.com?Subject=From%20ananduyd.github.com" target="_top">Contact Me</a></span>
+            </div>
+        </div>
+        <div class="col-6">
+        <h3 style="text-align:center">Skills</h3>
+	        <div class="row">
+				<img src="angular.png" class="angular" alt="angular" height="176" width="196"/>
+				<img src="Boostrap_logo.png" alt="bootstrap"  height="128" width="111" class="auto-style2"/>
+				<img src="sass-logo-new.png" alt="sass" height="133" width="157" class="auto-style3" />
+				<img src="html5-css-javascript-logos.png" alt="js-html-css" height="156" width="436"/>
+			</div>
+			<div class="row">
+				<img src="Java_programming_language_logo.png" alt="java" height="171" width="130" />
+				<img src="spring-framework.png" alt="spring" height="122" width="220" class="auto-style1"/>
+				<img src="android.png" alt="android" height="174" width="180" />
+			</div>   
+        </div>
+        </div>
+        </div>
 </body>
+
 </html>
