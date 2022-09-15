@@ -187,7 +187,7 @@ p span {
 }
 
 p i {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 /*************
@@ -1257,6 +1257,11 @@ textarea.form-control {
         -webkit-transition: all 0.65s ease 0s;
         transition: all 0.65s ease 0s;
 
+    }
+
+    .intro__content {
+        left: 0;
+        top: 10%;
     }
 }
 
