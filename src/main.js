@@ -23,9 +23,9 @@ particlesJS.load('particles-js', 'src/particles.json', function() {
 $(document).ready(function() {
 
     //COUNTDOWN
-	$(".countdown").countdown("2020/4/5", function(event) {
-        $(this).text(event.strftime('%D days %Hh %Mm %Ss'));
-    });
+	// $(".countdown").countdown("2020/4/5", function(event) {
+    //     $(this).text(event.strftime('%D days %Hh %Mm %Ss'));
+    // });
 
     $('.start-stop i').on('click', function() { 
         $('.start-stop i').removeClass('i-opacity');
@@ -129,6 +129,7 @@ $(document).ready(function() {
     (function() {
             var container = document.getElementById( 'main-content' ),
                 trigger = container.querySelector( 'button.trigger' );
+            var button =  document.getElementById('see-more')
 
             function toggleContent() {
                 if( classie.has( container, 'container--open' ) ) {
@@ -154,6 +155,8 @@ $(document).ready(function() {
             window.addEventListener( 'scroll', noscroll );
 
             trigger.addEventListener( 'click', toggleContent );
+            button.addEventListener( 'click', toggleContent );
+
                 
     })();
 
