@@ -63,7 +63,7 @@ h5 {
 p {
     color: rgb(252, 251, 251);
     letter-spacing: 0.2px;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 17px;
 }
 
@@ -180,6 +180,14 @@ section:not(:last-child) {
 .actions li i {
     color: #efeeef;
     font-size: x-large;
+}
+
+p span {
+    font-weight: 700;
+}
+
+p i {
+    font-weight: 400;
 }
 
 /*************
